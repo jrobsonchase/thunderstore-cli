@@ -15,7 +15,7 @@ namespace ThunderstoreCLI.Config
                 IconPath = "./icon.png",
                 ReadmePath = "./README.md",
                 OutDir = "./build",
-                CopyPaths = new()
+                CopyPaths = new Dictionary<string, string>
                 {
                     { "./dist", "./" }
                 }
@@ -31,7 +31,7 @@ namespace ThunderstoreCLI.Config
                 VersionNumber = "0.0.1",
                 Description = "Example mod description",
                 WebsiteUrl = "",
-                Dependencies = new()
+                Dependencies = new Dictionary<string, string>
                 {
                     { "Example-Dependency", "1.0.0" }
                 }
